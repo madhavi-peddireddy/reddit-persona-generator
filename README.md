@@ -45,16 +45,15 @@ GOOGLE_API_KEY=your_google_api_key
 ```bash
 python main.py "https://www.reddit.com/user/kojied/"
 ```
-
-### With Custom Output Directory
-```bash
-python main.py "https://www.reddit.com/user/kojied/" --output-dir custom_output
-```
-
 ### With Verbose Logging
 ```bash
 python main.py "https://www.reddit.com/user/kojied/" --verbose
 ```
+
+## 📽️ Demo
+
+Watch the demo on [Loom](https://www.loom.com/share/3bfb14a5b13d4415b03eb2a8451b607b?sid=bfa05d79-b093-4138-85b1-14fe6d5f0e8c)
+
 
 ## Output Format
 
@@ -120,14 +119,6 @@ Edit `config.py` to adjust:
 - LLM parameters
 - Output formatting
 
-## Error Handling
-
-The application handles:
-- Private/non-existent users
-- API rate limits
-- Network errors
-- Invalid URLs
-- Insufficient content
 
 ## Rate Limiting
 
@@ -147,43 +138,13 @@ The scraper includes built-in rate limiting to respect Reddit's API guidelines. 
 - Google Gemini API key
 - Internet connection
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-This project is for educational purposes. Please ensure compliance with Reddit's API terms and user privacy guidelines.
-
-## Troubleshooting
-
-### Common Issues
+## Common Issues
 
 1. **Reddit API errors**: Check your credentials and rate limits
 2. **Google Gemini API errors**: Verify your API key and quota
 3. **Empty results**: User might be private or have no content
 4. **Installation issues**: Use Python 3.8+ and install all dependencies
-
-### Debugging
-
-Use the `--verbose` flag to see detailed logging:
-```bash
-python main.py "https://www.reddit.com/user/kojied/" --verbose
-```
-
-## Support
-
-For issues and questions:
-1. Check the troubleshooting section
-2. Review the logs in `persona_generator.log`
-3. Create an issue on GitHub
-
----
-
 
 
 ## .env (template)
