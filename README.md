@@ -44,14 +44,15 @@ REDDIT_USER_AGENT=PersonaGenerator/1.0
 GOOGLE_API_KEY=your_google_api_key
 ```
 
-## Reddit API Setup
+## 🧾 Reddit API Setup
+### 🔐 You'll need Reddit API credentials:
 
 1. Go to https://www.reddit.com/prefs/apps
 2. Create a new application (script type)
 3. Note your client ID and secret
 4. Add these to your `.env` file
 
-## Usage
+## ▶️ Usage
 
 ### Basic Usage
 ```bash
@@ -67,43 +68,43 @@ python main.py "https://www.reddit.com/user/kojied/" --verbose
 Watch the demo on [Loom](https://www.loom.com/share/3bfb14a5b13d4415b03eb2a8451b607b?sid=bfa05d79-b093-4138-85b1-14fe6d5f0e8c)
 
 
-## Output Format
+## 🧠 Output Format
 
 The generated persona includes:
 
-### Personal Information
+### 👤 Personal Information
 - Username and activity level
 - Estimated demographics
 - Primary communities
 - User archetype
 
-### Personality Traits
+### 🧬 Personality Traits
 - MBTI-style personality scores
 - Communication patterns
 - Social behavior analysis
 
-### Behavior & Habits
+### ⏱️ Behavior & Habits
 - Activity patterns
 - Engagement metrics
 - Content preferences
 
-### Motivations
+### 🎯 Motivations
 - Key driving factors
 - Scored motivations (1-10)
 
-### Frustrations
+### 😤 Frustrations
 - Common pain points
 - Behavioral indicators
 
-### Goals & Needs
+### 🏆 Goals & Needs
 - Short and long-term objectives
 - Priority areas
 
-### Citations
+### 📌 Citations
 - Specific posts/comments supporting each characteristic
 - Evidence linking analysis to source content
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 reddit_persona_generator/
@@ -119,31 +120,31 @@ reddit_persona_generator/
 └── data/                  # Scraped data cache
 ```
 
-## Sample Output
+## 📄 Sample Output
 
 See `output/kojied_persona.txt` and `output/Hungry-Move-6603_persona.txt` for example personas generated from the provided sample users.
 
-## Configuration
+## ⚙️ Configuration
 
 Edit `config.py` to adjust:
 - Maximum posts/comments to scrape
 - Request delays (rate limiting)
 - LLM parameters
-- Output formatting
+- Output formatting options
 
 
-## Rate Limiting
+## 🚦 Rate Limiting
 
 The scraper includes built-in rate limiting to respect Reddit's API guidelines. Default delay is 1 second between requests.
 
-## Privacy & Ethics
+## 🔒 Privacy & Ethics
 
 - Only processes publicly available Reddit content
 - No personal information is stored beyond the session
 - Respects Reddit's terms of service
 - Code is provided for educational purposes
 
-## Requirements
+## 🧰 Requirements
 
 - Python 3.8+
 - Reddit API credentials
@@ -151,7 +152,7 @@ The scraper includes built-in rate limiting to respect Reddit's API guidelines. 
 - Internet connection
 
 
-## Common Issues
+## 🧯 Common Issues
 
 1. **Reddit API errors**: Check your credentials and rate limits
 2. **Google Gemini API errors**: Verify your API key and quota
@@ -159,7 +160,7 @@ The scraper includes built-in rate limiting to respect Reddit's API guidelines. 
 4. **Installation issues**: Use Python 3.8+ and install all dependencies
 
 
-## .env (template)
+## 🧪 .env (template)
 ```
 REDDIT_CLIENT_ID=your_reddit_client_id_here
 REDDIT_CLIENT_SECRET=your_reddit_client_secret_here
